@@ -1,3 +1,7 @@
+✨ Autoras
+- Isabel Arantes Baggio 👩‍🎓
+- Maria Eduarda De Oliveira Dos Santos 👩‍🎓
+
 # 🍽️ RestoChef Maisa - Fábrica de Software 2025/1
 
 📌 Este projeto foi desenvolvido como parte da disciplina de Fábrica de Software do curso de Sistemas de Informação da **Univille**.  
@@ -56,8 +60,5 @@ mvn spring-boot:run
 
 💡 Obs.: Certifique-se de que o Java 17+ e o Maven estão instalados e configurados corretamente em seu ambiente.
 
-👩‍💻 Autoras
-Este projeto foi idealizado e desenvolvido com dedicação por:
-- Isabel Arantes Baggio 👩‍🎓
-- Maria Eduarda De Oliveira Dos Santos 👩‍🎓
+
 
