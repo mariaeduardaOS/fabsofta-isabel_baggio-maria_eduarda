@@ -54,6 +54,7 @@ mvn spring-boot:run
 
 💡 Obs.: Certifique-se de que o Java 17+ e o Maven estão instalados e configurados corretamente em seu ambiente.
 
+---
 👩‍💻 Autoras
 - Isabel Arantes Baggio
 - Maria Eduarda de Oliveira dos Santos
