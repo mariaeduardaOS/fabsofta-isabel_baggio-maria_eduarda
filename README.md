@@ -49,13 +49,15 @@ git clone https://github.com/seuusuario/restochefmaisa.git
 2- Compile o projeto:
 mvn clean install
 
+
 - Execute a aplicação:
 mvn spring-boot:run
 
+
 💡 Obs.: Certifique-se de que o Java 17+ e o Maven estão instalados e configurados corretamente em seu ambiente.
 
----
-## 👩‍🤝‍👩Autoras:
-- Isabel Arantes Baggio
-- Maria Eduarda De Oliveira Dos Santos
+👩‍💻 Autoras
+Este projeto foi idealizado e desenvolvido com dedicação por:
+- Isabel Arantes Baggio 👩‍🎓
+- Maria Eduarda De Oliveira Dos Santos 👩‍🎓
 
