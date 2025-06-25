@@ -22,20 +22,25 @@ public class ReceitaServiceImpl implements ReceitaService {
 
     @Override
     public Receita delete(long id) {
-        var receita = getById(id);
+        Receita receita = getById(id);
         if (receita != null)
             repository.deleteById(id);
         return receita;
     }
 
     @Override
-    public List<Receita> getAll() {
-        return repository.findAll();
+    public Receita getById(long id) {
+        java.util.Optional<Receita> retorno = repository.findById(id);
+        return retorno.orElse(null);
     }
 
     @Override
-    public Receita getById(long id) {
-        var retorno = repository.findById(id);
-        return retorno.orElse(null);
+    public List<Receita> buscarPorIngredientes(List<String> ingredientes) {
+        return repository.buscarReceitasPorIngredientes(ingredientes, ingredientes.size());
+    }
+
+    @Override
+    public List<Receita> getAll() {
+        return repository.findAll();
     }
 }

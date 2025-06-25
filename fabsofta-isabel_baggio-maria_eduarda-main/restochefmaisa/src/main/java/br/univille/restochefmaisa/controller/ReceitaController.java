@@ -19,7 +19,7 @@ public class ReceitaController {
 
     @GetMapping
     public ResponseEntity<List<Receita>> getReceitas() {
-        var listaReceitas = service.getAll();
+        List<Receita> listaReceitas = service.getAll();
         return new ResponseEntity<>(listaReceitas, HttpStatus.OK);
     }
 
@@ -36,18 +36,16 @@ public class ReceitaController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Receita> putReceita(@PathVariable long id,
-                                              @RequestBody Receita receita) {
+    public ResponseEntity<Receita> putReceita(@PathVariable long id, @RequestBody Receita receita) {
         if (id <= 0 || receita == null) {
             return ResponseEntity.badRequest().build();
         }
 
-        var receitaAntiga = service.getById(id);
+        Receita receitaAntiga = service.getById(id);
         if (receitaAntiga == null) {
             return ResponseEntity.notFound().build();
         }
 
-        // Os métodos abaixo precisam existir na classe Receita!
         receitaAntiga.setUsuario(receita.getUsuario());
         receitaAntiga.setIngredientes(receita.getIngredientes());
         receitaAntiga.setModoPreparo(receita.getModoPreparo());
@@ -63,12 +61,22 @@ public class ReceitaController {
             return ResponseEntity.badRequest().build();
         }
 
-        var receitaExcluir = service.getById(id);
+        Receita receitaExcluir = service.getById(id);
         if (receitaExcluir == null) {
             return ResponseEntity.notFound().build();
         }
 
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    // Endpoint para busca por ingredientes
+    @GetMapping("/buscar")
+    public ResponseEntity<List<Receita>> buscarPorIngredientes(@RequestParam List<String> ingredientes) {
+        if (ingredientes == null || ingredientes.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+        List<Receita> receitas = service.buscarPorIngredientes(ingredientes);
+        return new ResponseEntity<>(receitas, HttpStatus.OK);
     }
 }

@@ -9,4 +9,5 @@ public interface ReceitaService {
     List<Receita> getAll();
     Receita getById(long id);
     Receita delete(long id);
+    List<Receita> buscarPorIngredientes(List<String> ingredientes);
 }
