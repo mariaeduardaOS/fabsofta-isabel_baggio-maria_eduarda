@@ -1,64 +1,73 @@
-✨ Autoras
-- Isabel Arantes Baggio 👩‍🎓
-- Maria Eduarda De Oliveira Dos Santos 👩‍🎓
+# 🍽️ **Restô — com Chef Maisa** | Fábrica de Software 2025/1
 
-# 🍽️ RestoChef Maisa - Fábrica de Software 2025/1
+Bem-vindo ao **Restô — com Chef Maisa**, um sistema criado para transformar o gerenciamento de receitas culinárias em algo simples, eficiente e com muito sabor!  
 
-📌 Este projeto foi desenvolvido como parte da disciplina de Fábrica de Software do curso de Sistemas de Informação da **Univille**.  
-O objetivo é criar uma aplicação para **gerenciamento de receitas culinárias** de forma prática, intuitiva e eficiente.
+Este projeto foi desenvolvido como parte da disciplina de **Fábrica de Software** do curso de **Sistemas de Informação** da *Univille*.
 
 ---
 
 ## 📖 Histórias de Usuário
 
-As funcionalidades do RestoChef Maisa foram pensadas com base nas seguintes histórias de usuário:
+O sistema foi pensado com foco na praticidade e organização, baseado nas seguintes histórias de usuário:
 
-| ID   | História                                                                                      |
-|------|-----------------------------------------------------------------------------------------------|
-| US01 | Como usuário, quero cadastrar receitas com ingredientes e modo de preparo, para ter um repositório organizado. |
-| US02 | Como usuário, quero visualizar uma lista com todas as receitas cadastradas, para escolher o que preparar.        |
-| US03 | Como usuário, quero editar receitas já cadastradas, para corrigir ou atualizar as informações.                   |
-| US04 | Como usuário, quero excluir receitas que não quero mais manter no sistema.                                       |
-| US05 | Como usuário, quero buscar receitas pelo nome ou ingrediente, para facilitar o acesso ao conteúdo desejado.     |
+| **ID** | **História de Usuário**                                                                                                                            |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| US01   | Como usuário, quero cadastrar receitas com ingredientes e modo de preparo, para manter minhas receitas organizadas.                                |
+| US02   | Como usuário, quero visualizar todas as receitas cadastradas, para escolher com facilidade o que preparar.                                         |
+| US03   | Como usuário, quero poder editar as receitas cadastradas, para corrigir ou atualizar detalhes quando necessário.                                   |
+| US04   | Como usuário, quero excluir receitas, para remover aquelas que não desejo mais manter.                                                             |
+| US05   | Como usuário, quero buscar receitas pelo nome ou ingrediente, para encontrar rapidamente o que desejo cozinhar.                                    |
 
 ---
 
-## 🛠 Funcionalidades
+## 🛠️ Funcionalidades
 
-- Cadastro de receitas com nome, lista de ingredientes e modo de preparo.  
-- Listagem de todas as receitas registradas.  
-- Edição e exclusão de receitas.  
-- Busca por nome e/ou ingredientes.
+✅ Cadastro de receitas com nome, ingredientes e modo de preparo.  
+✅ Listagem completa das receitas cadastradas.  
+✅ Edição e exclusão de receitas.  
+✅ Busca por nome e/ou ingredientes de forma rápida e prática.  
 
 ---
 
 ## 💻 Tecnologias Utilizadas
 
-- Java ☕  
-- Spring Boot 🌱  
-- Maven ⚙️  
-- REST API 🔗  
-- Docker 🐳 (opcional)  
-- GitHub Actions (CI/CD) 🚀
+- **Java 17+** ☕  
+- **Spring Boot** 🌱  
+- **Maven** ⚙️  
+- **REST API** 🔗  
+- **Docker (opcional)** 🐳  
+- **GitHub Actions (CI/CD)** 🚀  
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
+### 1⃣ Clone o Repositório:
 
 ```bash
-git clone https://github.com/seuusuario/restochefmaisa.git
+git clone https://github.com/seuusuario/resto-chefmaisa.git
+```
 
-2- Compile o projeto:
+### 2⃣ Compile o Projeto:
+
+```bash
 mvn clean install
+```
 
+### 3⃣ Execute a Aplicação:
 
-- Execute a aplicação:
+```bash
 mvn spring-boot:run
+```
 
+> 💡 **Requisitos:** É necessário ter o **Java 17+** e o **Maven** instalados e configurados corretamente no ambiente.
 
-💡 Obs.: Certifique-se de que o Java 17+ e o Maven estão instalados e configurados corretamente em seu ambiente.
+---
 
+## 👩‍🍳 Projeto desenvolvido por:
 
+**Isabel Arantes Baggio** | **Maria Eduarda de Oliveira dos Santos**
 
+---
+
+# 🥂 Bon Appétit!
