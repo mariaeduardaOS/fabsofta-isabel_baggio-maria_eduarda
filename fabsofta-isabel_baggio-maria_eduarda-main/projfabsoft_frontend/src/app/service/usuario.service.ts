@@ -6,15 +6,16 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UsuarioService {
-  apiURL = "http://localhost:880/api/v1/usuarios"
-  
-  constructor(private http:HttpClient) { }
 
-  getUsuarios(){
-    return this.http.get<Usuario[]>(this.apiURL)
+  apiURL = "http://localhost:8080/api/v1/usuarios"; // Corrige se necessário
+
+  constructor(private http: HttpClient) { }
+
+  getUsuarios() {
+    return this.http.get<Usuario[]>(this.apiURL);
   }
-  saveUsuario(usuario: Usuario){
-    return this.http.post<Usuario>(this.apiURL,usuario);
+
+  saveUsuario(usuario: Usuario) {
+    return this.http.post<Usuario>(this.apiURL, usuario);
   }
 }
-
