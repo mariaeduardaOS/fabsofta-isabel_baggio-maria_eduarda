@@ -35,7 +35,7 @@ O sistema foi pensado com foco na praticidade e organização, baseado nas segui
 - **Spring Boot** 🌱  
 - **Maven** ⚙️  
 - **REST API** 🔗  
-- **Docker (opcional)** 🐳  
+- **Docker** 🐳  
 - **GitHub Actions (CI/CD)** 🚀  
 
 ---
