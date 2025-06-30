@@ -36,7 +36,7 @@ public class IngredienteController {
         }
 
         Ingrediente novoIngrediente = service.save(ingrediente);
-        return ResponseEntity.status(201).body(novoIngrediente); // 201 Created
+        return ResponseEntity.status(201).body(novoIngrediente);
     }
 
     @PutMapping("/{id}")
@@ -52,8 +52,6 @@ public class IngredienteController {
         }
 
         existente.setNome(ingrediente.getNome());
-        existente.setUnidade(ingrediente.getUnidade());
-        existente.setCategoria(ingrediente.getCategoria());
 
         Ingrediente atualizado = service.save(existente);
         return ResponseEntity.ok(atualizado);
@@ -71,6 +69,6 @@ public class IngredienteController {
         }
 
         service.delete(id);
-        return ResponseEntity.noContent().build(); // 204 No Content
+        return ResponseEntity.noContent().build();
     }
 }

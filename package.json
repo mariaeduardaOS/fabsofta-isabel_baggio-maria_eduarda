@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@angular/router": "^20.0.4"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10"
   }
 }

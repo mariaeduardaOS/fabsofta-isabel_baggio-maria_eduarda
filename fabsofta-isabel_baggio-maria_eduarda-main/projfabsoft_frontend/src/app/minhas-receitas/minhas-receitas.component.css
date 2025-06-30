@@ -1,0 +1,8 @@
+.titulo { color: #8B0000; }
+.card-receita {
+  background: #fff;
+  border: 2px dashed #c71585;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+}

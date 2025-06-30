@@ -1,0 +1,58 @@
+/* Estilos opcionais para customizar a navbar */
+.navbar {
+    z-index: 1030;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: var(--font-signature);
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--accent-color);
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.btn-outline-light {
+    border-radius: 25px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary {
+    border-radius: 25px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #FF99AA;
+    border-color: #FF99AA;
+}
