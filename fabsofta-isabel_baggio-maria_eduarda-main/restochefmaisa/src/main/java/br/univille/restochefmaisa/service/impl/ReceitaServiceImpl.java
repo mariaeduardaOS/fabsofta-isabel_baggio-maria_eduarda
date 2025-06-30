@@ -21,11 +21,10 @@ public class ReceitaServiceImpl implements ReceitaService {
     }
 
     @Override
-    public Receita delete(long id) {
+    public void delete(long id) {
         Receita receita = getById(id);
         if (receita != null)
             repository.deleteById(id);
-        return receita;
     }
 
     @Override

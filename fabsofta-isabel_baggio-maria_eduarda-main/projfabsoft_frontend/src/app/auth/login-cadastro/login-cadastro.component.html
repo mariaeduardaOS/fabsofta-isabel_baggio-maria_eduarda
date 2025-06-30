@@ -1,0 +1,5 @@
+<h2>Login</h2>
+<input type="email" [(ngModel)]="loginData.email" name="email" placeholder="Email" required>
+<input type="password" [(ngModel)]="loginData.password" name="password" placeholder="Senha" required>
+<button (click)="onLoginSubmit()">Entrar</button>
+<p>Não tem conta? <a (click)="toggleMode('cadastro')">Cadastre-se</a></p>

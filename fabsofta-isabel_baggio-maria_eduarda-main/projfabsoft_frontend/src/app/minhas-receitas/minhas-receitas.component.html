@@ -1,0 +1,7 @@
+<h2 class="titulo">Minhas Receitas</h2>
+<div class="receita-grid">
+  <div class="card-receita" *ngFor="let receita of minhasReceitas">
+    <h3>{{ receita.nome }}</h3>
+    <p>{{ receita.descricao }}</p>
+  </div>
+</div>
