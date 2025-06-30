@@ -1,73 +1,55 @@
-# 🍽️ **Restô — com Chef Maisa** | Fábrica de Software 2025/1
+🍽️ Restô — com Chef Maisa | Fábrica de Software 2025/1
+Bem-vindo ao Restô — com Chef Maisa, um sistema feito para organizar suas receitas com sabor e simplicidade, trazendo praticidade para sua cozinha e para o seu dia a dia!
 
-Bem-vindo ao **Restô — com Chef Maisa**, um sistema criado para transformar o gerenciamento de receitas culinárias em algo simples, eficiente e com muito sabor!  
+Este projeto foi desenvolvido para a disciplina de Fábrica de Software do curso de Sistemas de Informação na Univille.
 
-Este projeto foi desenvolvido como parte da disciplina de **Fábrica de Software** do curso de **Sistemas de Informação** da *Univille*.
+🧑‍🍳 Visão do Sistema
+O Restô é um sistema que permite:
 
----
+🥕 Cadastrar receitas com nome, ingredientes e modo de preparo.
+📋 Listar receitas cadastradas de forma limpa e prática.
+✏️ Editar e excluir receitas de maneira simples.
+🔎 Buscar receitas por ingredientes, encontrando rapidamente o que você consegue cozinhar com o que tem em casa.
 
-## 📖 Histórias de Usuário
+📖 Histórias de Usuário
+Baseamos o sistema em histórias reais de necessidades de cozinha e organização:
 
-O sistema foi pensado com foco na praticidade e organização, baseado nas seguintes histórias de usuário:
+ID	História de Usuário
+US01	Como usuária (Chef Maisa), quero cadastrar minhas receitas para nunca perdê-las e compartilhar com minhas amigas.
+US02	Quero visualizar todas as receitas cadastradas, para decidir rapidamente o cardápio do dia.
+US03	Quero poder editar uma receita se encontrar um ingrediente ou passo melhor.
+US04	Quero excluir receitas que não utilizo mais.
+US05	Quero buscar receitas pelos ingredientes disponíveis em casa, para otimizar minhas compras e evitar desperdícios.
 
-| **ID** | **História de Usuário**                                                                                                                            |
-|--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| US01   | Como usuário, quero cadastrar receitas com ingredientes e modo de preparo, para manter minhas receitas organizadas.                                |
-| US02   | Como usuário, quero visualizar todas as receitas cadastradas, para escolher com facilidade o que preparar.                                         |
-| US03   | Como usuário, quero poder editar as receitas cadastradas, para corrigir ou atualizar detalhes quando necessário.                                   |
-| US04   | Como usuário, quero excluir receitas, para remover aquelas que não desejo mais manter.                                                             |
-| US05   | Como usuário, quero buscar receitas pelo nome ou ingrediente, para encontrar rapidamente o que desejo cozinhar.                                    |
+💻 Tecnologias Utilizadas
+🍃 Spring Boot (Java 17+)
+⚙️ Maven
+🔗 REST API
+🐳 Docker
+🛠️ GitHub Actions (CI/CD)
 
----
-
-## 🛠️ Funcionalidades
-
-✅ Cadastro de receitas com nome, ingredientes e modo de preparo.  
-✅ Listagem completa das receitas cadastradas.  
-✅ Edição e exclusão de receitas.  
-✅ Busca por nome e/ou ingredientes de forma rápida e prática.  
-
----
-
-## 💻 Tecnologias Utilizadas
-
-- **Java 17+** ☕  
-- **Spring Boot** 🌱  
-- **Maven** ⚙️  
-- **REST API** 🔗  
-- **Docker** 🐳  
-- **GitHub Actions (CI/CD)** 🚀  
-
----
-
-## 🚀 Como Executar o Projeto
-
-### 1⃣ Clone o Repositório:
-
-```bash
+🚀 Como Executar o Projeto
+1️⃣ Clone o repositório
+bash
+Copiar código
 git clone https://github.com/seuusuario/resto-chefmaisa.git
-```
-
-### 2⃣ Compile o Projeto:
-
-```bash
+2️⃣ Compile o projeto
+bash
+Copiar código
 mvn clean install
-```
-
-### 3⃣ Execute a Aplicação:
-
-```bash
+3️⃣ Rode o projeto
+bash
+Copiar código
 mvn spring-boot:run
-```
+A aplicação estará disponível em:
 
-> 💡 **Requisitos:** É necessário ter o **Java 17+** e o **Maven** instalados e configurados corretamente no ambiente.
+bash
+Copiar código
+http://localhost:8080/api/v1/receitas
+🍰 Requisitos: Java 17+ e Maven instalados corretamente.
 
----
+👩‍🍳 Desenvolvedoras
+Isabel Arantes Baggio | Maria Eduarda de Oliveira dos Santos
+Projeto de Fábrica de Software – Univille – 2025/1
 
-## 👩‍🍳 Projeto desenvolvido por:
-
-**Isabel Arantes Baggio** | **Maria Eduarda de Oliveira dos Santos**
-
----
-
-# 🥂 Bon Appétit!
+🥂 Bon Appétit! E boas receitas com o Restô — com Chef Maisa!
