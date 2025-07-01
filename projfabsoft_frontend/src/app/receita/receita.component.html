@@ -1,0 +1,26 @@
+<main class="container">
+    <h2>Receitas</h2>
+    <button (click)="novo()" class="btn btn-primary mb-2">Nova Receita</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Ingredientes</th>
+                <th>Modo de Preparo</th>
+                <th>Usuário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let receita of listaReceitas">
+                <td>{{receita.nome}}</td>
+                <td>{{receita.ingredientes.join(', ')}}</td>
+                <td>{{receita.modoPreparo}}</td>
+                <td>{{receita.usuario}}</td>
+                <td>
+                    <button (click)="alterar(receita)" class="btn btn-secondary btn-sm">Alterar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
