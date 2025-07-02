@@ -8,5 +8,7 @@ public interface ReceitaService {
     Receita save(Receita a);
     List<Receita> getAll();
     Receita getById(long id);
-    Receita delete(long id);
+    void delete(long id);
+    List<Receita> findByIdUsuario(Long idUsuario);
+    List<Receita> findByIngredientes(List<String> ingredientes);
 }

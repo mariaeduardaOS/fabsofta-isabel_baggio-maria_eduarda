@@ -23,21 +23,26 @@ public class UsuarioController {
         return new ResponseEntity<>(listaUsuarios, HttpStatus.OK);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Usuario> getUsuarioById(@PathVariable long id) {
+        var usuario = service.getById(id);
+        if (usuario == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return new ResponseEntity<>(usuario, HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<Usuario> postUsuario(@RequestBody Usuario usuario) {
-        if (usuario == null) {
+        if (usuario == null || usuario.getId() != 0) {
             return ResponseEntity.badRequest().build();
         }
-        if (usuario.getId() == 0) {
-            service.save(usuario);
-            return new ResponseEntity<>(usuario, HttpStatus.OK);
-        }
-        return ResponseEntity.badRequest().build();
+        service.save(usuario);
+        return new ResponseEntity<>(usuario, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Usuario> putUsuario(@PathVariable long id,
-                                              @RequestBody Usuario usuario) {
+    public ResponseEntity<Usuario> putUsuario(@PathVariable long id, @RequestBody Usuario usuario) {
         if (id <= 0 || usuario == null) {
             return ResponseEntity.badRequest().build();
         }
@@ -56,7 +61,7 @@ public class UsuarioController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Usuario> deleteUsuario(@PathVariable long id) {
+    public ResponseEntity<Void> deleteUsuario(@PathVariable long id) {
         if (id <= 0) {
             return ResponseEntity.badRequest().build();
         }
@@ -67,6 +72,6 @@ public class UsuarioController {
         }
 
         service.delete(id);
-        return new ResponseEntity<>(usuarioExcluir, HttpStatus.OK);
+        return ResponseEntity.noContent().build();
     }
 }

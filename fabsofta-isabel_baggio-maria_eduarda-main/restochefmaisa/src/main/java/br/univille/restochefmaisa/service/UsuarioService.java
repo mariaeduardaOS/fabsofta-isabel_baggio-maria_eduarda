@@ -8,5 +8,5 @@ public interface UsuarioService {
     Usuario save(Usuario usuario);
     List<Usuario> getAll();
     Usuario getById(long id);
-    Usuario delete(long id);
+    void delete(long id);
 }

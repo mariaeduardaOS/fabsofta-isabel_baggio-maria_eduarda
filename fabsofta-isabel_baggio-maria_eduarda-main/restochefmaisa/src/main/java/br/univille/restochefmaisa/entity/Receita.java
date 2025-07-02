@@ -13,13 +13,13 @@ public class Receita {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nome;
 
     @ElementCollection
     private List<String> ingredientes;
-
     private String modoPreparo;
+
+    private Long idUsuario;
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -33,8 +33,6 @@ public class Receita {
     public String getModoPreparo() { return modoPreparo; }
     public void setModoPreparo(String modoPreparo) { this.modoPreparo = modoPreparo; }
 
-    private String usuario;
-
-    public String getUsuario() { return usuario; }
-    public void setUsuario(String usuario) { this.usuario = usuario; }
+    public Long getIdUsuario() { return idUsuario; }
+    public void setIdUsuario(Long idUsuario) { this.idUsuario = idUsuario; }
 }

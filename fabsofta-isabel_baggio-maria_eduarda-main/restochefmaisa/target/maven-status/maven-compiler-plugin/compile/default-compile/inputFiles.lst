@@ -1,0 +1,13 @@
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/RestoChefMaisaApplication.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/config/WebConfig.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/controller/HomeController.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/controller/ReceitaController.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/controller/UsuarioController.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/entity/Receita.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/entity/Usuario.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/repository/ReceitaRepository.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/repository/UsuarioRepository.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/service/ReceitaService.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/service/UsuarioService.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/service/impl/ReceitaServiceImpl.java
+/workspaces/fabsofta-isabel_baggio-maria_eduarda/fabsofta-isabel_baggio-maria_eduarda-main/restochefmaisa/src/main/java/br/univille/restochefmaisa/service/impl/UsuarioServiceImpl.java

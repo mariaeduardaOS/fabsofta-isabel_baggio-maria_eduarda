@@ -23,21 +23,44 @@ public class ReceitaController {
         return new ResponseEntity<>(listaReceitas, HttpStatus.OK);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Receita> getReceitaById(@PathVariable long id) {
+        var receita = service.getById(id);
+        if (receita == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return new ResponseEntity<>(receita, HttpStatus.OK);
+    }
+
+    @GetMapping("/usuarios/{idUsuario}")
+    public ResponseEntity<List<Receita>> getReceitasByUsuario(@PathVariable Long idUsuario) {
+        var listaReceitas = service.findByIdUsuario(idUsuario);
+        if (listaReceitas.isEmpty()) {
+            return new ResponseEntity<>(listaReceitas, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(listaReceitas, HttpStatus.OK);
+    }
+
+    @GetMapping("/buscar-por-ingredientes")
+    public ResponseEntity<List<Receita>> buscarReceitasPorIngredientes(@RequestParam List<String> ingredientes) {
+        var receitasEncontradas = service.findByIngredientes(ingredientes);
+        if (receitasEncontradas.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+        return new ResponseEntity<>(receitasEncontradas, HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<Receita> postReceita(@RequestBody Receita receita) {
-        if (receita == null) {
+        if (receita == null || receita.getId() != 0) {
             return ResponseEntity.badRequest().build();
         }
-        if (receita.getId() == 0) {
-            service.save(receita);
-            return new ResponseEntity<>(receita, HttpStatus.OK);
-        }
-        return ResponseEntity.badRequest().build();
+        service.save(receita);
+        return new ResponseEntity<>(receita, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Receita> putReceita(@PathVariable long id,
-                                              @RequestBody Receita receita) {
+    public ResponseEntity<Receita> putReceita(@PathVariable long id, @RequestBody Receita receita) {
         if (id <= 0 || receita == null) {
             return ResponseEntity.badRequest().build();
         }
@@ -47,8 +70,7 @@ public class ReceitaController {
             return ResponseEntity.notFound().build();
         }
 
-        // Os métodos abaixo precisam existir na classe Receita!
-        receitaAntiga.setUsuario(receita.getUsuario());
+        receitaAntiga.setIdUsuario(receita.getIdUsuario());
         receitaAntiga.setIngredientes(receita.getIngredientes());
         receitaAntiga.setModoPreparo(receita.getModoPreparo());
         receitaAntiga.setNome(receita.getNome());

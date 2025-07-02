@@ -1,13 +1,12 @@
 package br.univille.restochefmaisa.service.impl;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import br.univille.restochefmaisa.entity.Receita;
 import br.univille.restochefmaisa.repository.ReceitaRepository;
 import br.univille.restochefmaisa.service.ReceitaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ReceitaServiceImpl implements ReceitaService {
@@ -21,21 +20,31 @@ public class ReceitaServiceImpl implements ReceitaService {
     }
 
     @Override
-    public Receita delete(long id) {
-        var receita = getById(id);
-        if (receita != null)
-            repository.deleteById(id);
-        return receita;
-    }
-
-    @Override
     public List<Receita> getAll() {
         return repository.findAll();
     }
 
     @Override
     public Receita getById(long id) {
-        var retorno = repository.findById(id);
-        return retorno.orElse(null);
+        return repository.findById(id).orElse(null);
+    }
+
+    @Override
+    public void delete(long id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<Receita> findByIdUsuario(Long idUsuario) {
+        return repository.findByIdUsuario(idUsuario);
+    }
+
+    @Override
+    public List<Receita> findByIngredientes(List<String> ingredientes) {
+        List<Receita> todasReceitas = repository.findAll();
+        return todasReceitas.stream()
+                .filter(receita -> ingredientes.stream()
+                        .allMatch(ing -> receita.getIngredientes().contains(ing)))
+                .collect(Collectors.toList());
     }
 }
