@@ -20,6 +20,7 @@ public class ReceitaServiceImpl implements ReceitaService {
     }
 
     @Override
+<<<<<<< HEAD
     public List<Receita> getAll() {
         return repository.findAll();
     }
@@ -47,4 +48,27 @@ public class ReceitaServiceImpl implements ReceitaService {
                         .allMatch(ing -> receita.getIngredientes().contains(ing)))
                 .collect(Collectors.toList());
     }
+=======
+    public void delete(long id) {
+        Receita receita = getById(id);
+        if (receita != null)
+            repository.deleteById(id);
+    }
+
+    @Override
+    public Receita getById(long id) {
+        java.util.Optional<Receita> retorno = repository.findById(id);
+        return retorno.orElse(null);
+    }
+
+    @Override
+    public List<Receita> buscarPorIngredientes(List<String> ingredientes) {
+        return repository.buscarReceitasPorIngredientes(ingredientes, ingredientes.size());
+    }
+
+    @Override
+    public List<Receita> getAll() {
+        return repository.findAll();
+    }
+>>>>>>> 30f1ba3926ed262b67813604846f5357708b7146
 }

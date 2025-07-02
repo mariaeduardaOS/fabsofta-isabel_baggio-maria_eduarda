@@ -1,64 +1,66 @@
-✨ Autoras
-- Isabel Arantes Baggio 👩‍🎓
-- Maria Eduarda De Oliveira Dos Santos 👩‍🎓
+🍽️ Restô — com Chef Maisa
+Sistema de gerenciamento de receitas culinárias simples, prático!
+Desenvolvido para Fábrica de Software (2025/1) · Sistemas de Informação · Univille.
 
-# 🍽️ RestoChef Maisa - Fábrica de Software 2025/1
+✨ Visão Geral
+O Restô permite:
 
-📌 Este projeto foi desenvolvido como parte da disciplina de Fábrica de Software do curso de Sistemas de Informação da **Univille**.  
-O objetivo é criar uma aplicação para **gerenciamento de receitas culinárias** de forma prática, intuitiva e eficiente.
+✅ Cadastro de receitas com nome, ingredientes e modo de preparo.
+✅ Visualização e listagem das receitas cadastradas.
+✅ Edição e exclusão de receitas com facilidade.
+✅ Busca de receitas por ingredientes disponíveis em casa, evitando desperdícios.
 
----
+🧑‍🍳 Histórias de Usuário
+ID	História
+US01	Como usuária, quero cadastrar receitas para organizá-las de forma segura e acessível.
+US02	Quero visualizar todas as receitas para decidir rapidamente o que cozinhar.
+US03	Quero editar receitas para atualizar ingredientes ou modo de preparo conforme necessário.
+US04	Quero excluir receitas que não utilizo mais.
+US05	Quero buscar receitas por ingredientes, para cozinhar com o que tenho disponível em casa.
 
-## 📖 Histórias de Usuário
+⚙️ Tecnologias Utilizadas
+Java 17+
 
-As funcionalidades do RestoChef Maisa foram pensadas com base nas seguintes histórias de usuário:
+Spring Boot
 
-| ID   | História                                                                                      |
-|------|-----------------------------------------------------------------------------------------------|
-| US01 | Como usuário, quero cadastrar receitas com ingredientes e modo de preparo, para ter um repositório organizado. |
-| US02 | Como usuário, quero visualizar uma lista com todas as receitas cadastradas, para escolher o que preparar.        |
-| US03 | Como usuário, quero editar receitas já cadastradas, para corrigir ou atualizar as informações.                   |
-| US04 | Como usuário, quero excluir receitas que não quero mais manter no sistema.                                       |
-| US05 | Como usuário, quero buscar receitas pelo nome ou ingrediente, para facilitar o acesso ao conteúdo desejado.     |
+Maven
 
----
+REST API
 
-## 🛠 Funcionalidades
+Docker
 
-- Cadastro de receitas com nome, lista de ingredientes e modo de preparo.  
-- Listagem de todas as receitas registradas.  
-- Edição e exclusão de receitas.  
-- Busca por nome e/ou ingredientes.
+GitHub Actions (CI/CD)
 
----
+🚀 Como Executar
+1️⃣ Clone o repositório
 
-## 💻 Tecnologias Utilizadas
+bash
+Copiar código
+git clone https://github.com/seuusuario/resto-chefmaisa.git
+2️⃣ Compile o projeto
 
-- Java ☕  
-- Spring Boot 🌱  
-- Maven ⚙️  
-- REST API 🔗  
-- Docker 🐳 (opcional)  
-- GitHub Actions (CI/CD) 🚀
-
----
-
-## 🚀 Como Rodar o Projeto
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seuusuario/restochefmaisa.git
-
-2- Compile o projeto:
+bash
+Copiar código
 mvn clean install
+3️⃣ Execute a aplicação
 
-
-- Execute a aplicação:
+bash
+Copiar código
 mvn spring-boot:run
+Acesse em:
+
+bash
+Copiar código
+http://localhost:8080/api/v1/receitas
+⚠️ Pré-requisitos: Java 17+ e Maven configurados no ambiente.
 
 
-💡 Obs.: Certifique-se de que o Java 17+ e o Maven estão instalados e configurados corretamente em seu ambiente.
+👩‍🍳 Desenvolvedoras
+Isabel Arantes Baggio
+Maria Eduarda de Oliveira dos Santos
 
+Desenvolvido para Fábrica de Software · Univille · 2025/1.
 
+🥂 Bon Appétit!
+E boas receitas com o Restô — com Chef Maisa!
 

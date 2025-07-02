@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -12,6 +13,18 @@
                 "<node_internals>/**"
             ],
             "program": "${file}"
+=======
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RestoChefMaisaApplication<restochefmaisa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.univille.restochefmaisa.RestoChefMaisaApplication",
+            "projectName": "restochefmaisa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+>>>>>>> 30f1ba3926ed262b67813604846f5357708b7146
         }
     ]
 }
